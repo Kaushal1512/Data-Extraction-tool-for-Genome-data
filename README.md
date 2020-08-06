@@ -18,7 +18,7 @@ install.packages(pkgs)
 ```
 7. To run the project either fork/download the files and run the `app.R`-file, or in R run <br>
 ```r
-shiny::runGitHub('Computational_Finance-Shiny', 'DhruvThakker')
+shiny::runGitHub('Data-Extraction-tool-for-Genome-data', 'Kaushal1512')
 ```
 OR
 
@@ -26,13 +26,15 @@ OR
 shiny::runApp()
 ```
 
-In order to run the project properly, you need to have the following packages installed: `data.table`, `DT`, `ggplot2`, `knitr`, `magrittr`, `rmarkdown`, `fOptions`, and `shiny`.
+In order to run the project properly, you need to have the following packages installed: `data.table`, `DT`, `ggplot2`, `knitr`, `magrittr`, `rmarkdown`, `fOptions`,`sde`,`GEOquery`,`DiagrammeR`, `Heatplus` and `shiny`.
 
 To install all packages you can also use 
 
 ```r
-pkgs <- c("data.table", "DT", "ggplot2", "knitr", "magrittr", "rmarkdown", "fOptions", "shiny")
+pkgs <- c("data.table", "DT", "ggplot2", "knitr", "magrittr", "rmarkdown", "fOptions","sde","DiagrameR","Heatplus","shiny")
 install.packages(pkgs)
 ```
+To install `GEOquery` first install the Bioconductor manager and follow the link: https://bioconductor.org/packages/release/bioc/html/GEOquery.html
+
 Above instructions will help installing R and deploying shiny on local machine as well AWS with an open port. <br>
 For deploying on digital ocean follow this link: https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04
